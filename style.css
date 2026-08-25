@@ -1,0 +1,428 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #181818;
+    color: #a5a5a5;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    width: 100%;
+    height: 190px;
+
+    background-color: #42005c;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    color: #ffd000;
+
+    text-decoration: none;
+
+    font-size: 30px;
+
+    padding: 12px 20px;
+
+    transition: 0.3s;
+}
+
+.ativo{
+    background-color: #a5a5a5;
+}
+
+.menu a:hover {
+    background-color: #888;
+    color: #ffd000;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+    scroll-margin-top: 20px;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre {
+    min-height: 485px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 50px 7%;
+}
+
+.foto {
+    width: 270px;
+    height: 255px;
+
+    flex-shrink: 0;
+
+    background-color: #eee;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.texto-sobre {
+    max-width: 800px;
+}
+
+.texto-sobre h1 {
+    text-align: center;
+
+    font-size: 32px;
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+}
+
+.texto-sobre h2 {
+    text-align: center;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+.texto-sobre p {
+    font-size: 29px;
+
+    line-height: 1.4;
+
+    margin-bottom: 15px;
+}
+
+.link-projetos {
+    color: #ffd000;
+
+    font-size: 23px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   PROJETOS
+========================= */
+
+.projetos {
+    min-height: 500px;
+
+    padding: 60px 7%;
+
+    background-color: #181818;
+}
+
+.projetos > h2 {
+    text-align: center;
+
+    color: #ffd000;
+
+    font-size: 32px;
+
+    font-weight: normal;
+
+    margin-bottom: 60px;
+}
+
+.projetos-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+
+.projeto {
+    text-align: center;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.projeto:hover {
+    transform: translateY(-8px);
+}
+
+.projeto img {
+    width: 145px;
+    height: 145px;
+
+    object-fit: cover;
+
+    background-color: #eee;
+}
+
+.projeto h3 {
+    font-size: 28px;
+
+    font-weight: normal;
+
+    margin: 15px 0;
+
+    color: #a5a5a5;
+}
+
+.projeto p {
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+.projeto a {
+    color: #ffd000;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.projeto a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+.contato {
+    min-height: 500px;
+
+    padding: 60px 7%;
+
+    background-color: #151515;
+}
+
+.contato h2 {
+    text-align: center;
+
+    color: #ffd000;
+
+    font-size: 32px;
+
+    font-weight: normal;
+
+    margin-bottom: 60px;
+}
+
+.contatos {
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.contatos p {
+    font-size: 30px;
+
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+.contatos strong {
+    font-weight: normal;
+}
+
+.contatos a {
+    color: #a5a5a5;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.contatos a:hover {
+    color: #ffd000;
+}
+
+.botao-contato {
+    display: inline-block;
+
+    background-color: #ffd000;
+    color: #181818;
+
+    text-decoration: none;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    padding: 14px 30px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.botao-contato:hover {
+    background-color: #ffffff;
+
+    transform: scale(1.05);
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #100f0f;
+
+    text-align: center;
+
+    padding: 35px;
+
+    color: #777;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #100f0f;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    header {
+        height: 130px;
+    }
+
+    .menu a {
+        font-size: 22px;
+
+        padding: 10px;
+    }
+
+    .sobre {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .texto-sobre h1 {
+        font-size: 27px;
+    }
+
+    .texto-sobre h2 {
+        font-size: 32px;
+    }
+
+    .texto-sobre p {
+        font-size: 21px;
+    }
+
+    .projetos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contatos p {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    header {
+        height: auto;
+
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .menu a {
+        font-size: 21px;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .foto {
+        width: 220px;
+        height: 210px;
+    }
+
+    .texto-sobre p {
+        font-size: 18px;
+    }
+
+    .contatos p {
+        font-size: 18px;
+
+        word-break: break-word;
+    }
+}
