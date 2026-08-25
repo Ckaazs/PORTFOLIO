@@ -255,13 +255,26 @@ section {
 
     color: #ffd000;
 
-    font-size: 32px;
+    font-size: 10px;
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+
+}
+
+.contato h1 {
+    text-align: center;
+
+    color: #e0e0e0;
+
+    font-size: 50px;
 
     font-weight: normal;
 
     margin-bottom: 60px;
-}
 
+}
 .contatos {
     max-width: 700px;
 
@@ -269,11 +282,13 @@ section {
 }
 
 .contatos p {
-    font-size: 30px;
+    font-size: 25px;
 
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 
     text-align: center;
+
+    margin-top: 130px;
 }
 
 .contatos strong {
@@ -328,6 +343,10 @@ footer {
     padding: 35px;
 
     color: #777;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
